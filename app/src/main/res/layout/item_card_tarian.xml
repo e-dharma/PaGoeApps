@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rvTarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5dbfbe"
+        android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="375px"
+            android:layout_height="300px"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/imgItem_Photo"
+                android:layout_width="375px"
+                android:layout_height="300px"
+                android:scaleType="centerCrop"
+                android:contentDescription="Gambar Tarian"
+                android:src="@mipmap/ic_launcher" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvItem_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="160dp"
+            android:text="Nama Tarian"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvItem_Asal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItem_Name"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="160dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Asal"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
